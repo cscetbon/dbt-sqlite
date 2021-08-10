@@ -48,7 +48,7 @@
             ,type as data_type
         FROM 
             -- {{ schema_relation.schema }}.sqlite_master
-            main.sqlite_master
+            sqlite_master
         WHERE
             name NOT LIKE 'sqlite_%'
     {% endcall %}
